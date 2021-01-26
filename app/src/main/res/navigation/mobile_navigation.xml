@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    app:startDestination="@+id/navigation_notifications">
+
+    <fragment
+        android:id="@+id/navigation_sholawat"
+        android:name="com.thorin.apps.ratibsholawatmaulidkitabkuning.ui.menu.SholawatFragment"
+        android:label="@string/menu"
+        tools:layout="@layout/fragment_sholawat" />
+
+    <fragment
+        android:id="@+id/navigation_ratib"
+        android:name="com.thorin.apps.ratibsholawatmaulidkitabkuning.ui.ratib.RatibFragment"
+        android:label="@string/title_Ratib"
+        tools:layout="@layout/fragment_ratib" />
+
+
+    <fragment
+        android:id="@+id/navigation_notifications"
+        android:name="com.thorin.apps.ratibsholawatmaulidkitabkuning.ui.dashboard.NotificationsFragment"
+        android:label="@string/title_dashboard"
+        tools:layout="@layout/fragment_dashboard" />
+</navigation>

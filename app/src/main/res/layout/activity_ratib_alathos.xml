@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="10dp"
+    android:paddingRight="10dp"
+    android:paddingBottom="10dp"
+    android:orientation="vertical"
+    tools:context=".ui.ratib.RatibAlathosActivity">
+    <TextView
+        android:layout_marginTop="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/huruf_seekbar"
+        android:layout_gravity="center"/>
+    <SeekBar
+        android:layout_marginTop="4dp"
+        android:id="@+id/seekBarathos"
+        android:paddingBottom="8dp"
+        android:progress="30"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="18dp"
+            android:textSize="20sp"
+            android:text="@string/ratib_al_atthos" />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_marginTop="8dp"
+            android:text="@string/habib_athos"/>
+    <TextView
+        android:id="@+id/text_athos"
+        android:textSize="30sp"
+        android:fontFamily="@font/fontusmani"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:text=" "/>
+
+    </LinearLayout>
+    </ScrollView>
+</LinearLayout>

@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    tools:context=".ui.dashboard.SettingActivity">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Aktifkan Mode Gelap"
+        android:textSize="20sp"
+        android:layout_marginTop="20dp"/>
+    <Switch
+        android:id="@+id/dark_mode"
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="16dp"
+        android:text="Mode Gelap"
+        android:textSize="16sp"
+        tools:ignore="UseSwitchCompatOrMaterialXml" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Anda dapat memberi masukan kepada pengembang melalui email agar aplikasi semakin baik di masa depan."
+        android:textSize="20sp"
+        android:layout_marginTop="20dp"/>
+    <Button
+        android:onClick="reportEmail"
+        android:id="@+id/btn_laporanemail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="Laporan/Masukan"
+        android:textAlignment="textStart"
+        android:textAllCaps="false"
+        android:textSize="16sp"
+        style="@style/TextAppearance.AppCompat"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Jika anda merasa terganggu dengan iklan di aplikasi ini, anda bisa mengaturnya dengan klik tombol di bawah."
+        android:textSize="20sp"
+        android:layout_marginTop="20dp"/>
+    <Button
+        android:id="@+id/btn_iklan"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="Laporan/Masukan"
+        android:textAlignment="textStart"
+        android:textAllCaps="false"
+        android:textSize="16sp"
+        style="@style/TextAppearance.AppCompat"/>
+
+</LinearLayout>

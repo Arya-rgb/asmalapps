@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "462711109662",
+    "project_id": "ratib-dan-sholawat-lengkap",
+    "storage_bucket": "ratib-dan-sholawat-lengkap.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:462711109662:android:4983a16779c92c2c45d60f",
+        "android_client_info": {
+          "package_name": "com.thorin.apps.ratibsholawatmaulidkitabkuning"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "462711109662-m2o1ql2gidichkqaolfgng9f1ut4dhln.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBlkUYtndiwjTAMb5c_TozpTextRqykEkg"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "462711109662-m2o1ql2gidichkqaolfgng9f1ut4dhln.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

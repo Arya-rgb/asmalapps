@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/navigation_sholawat"
+        android:icon="@drawable/ic_sholawat_bottom"
+        android:title="@string/sholawat" />
+
+    <item
+        android:id="@+id/navigation_ratib"
+        android:icon="@drawable/ic_ratib_nav"
+        android:title="@string/ratib" />
+
+    <item
+        android:id="@+id/navigation_notifications"
+        android:icon="@drawable/ic_dashboard"
+        android:title="@string/title_dashboard" />
+
+</menu>
