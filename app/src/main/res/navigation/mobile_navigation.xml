@@ -6,20 +6,20 @@
 
     <fragment
         android:id="@+id/navigation_sholawat"
-        android:name="com.thorin.apps.ratibsholawatmaulidkitabkuning.ui.menu.SholawatFragment"
+        android:name="com.thorin.apps.asmal.ui.menu.sholawat.MenuFragment"
         android:label="@string/menu"
-        tools:layout="@layout/fragment_sholawat" />
+        tools:layout="@layout/fragment_menu" />
 
     <fragment
         android:id="@+id/navigation_ratib"
-        android:name="com.thorin.apps.ratibsholawatmaulidkitabkuning.ui.ratib.RatibFragment"
+        android:name="com.thorin.apps.asmal.ui.asisten.AsistenFragment"
         android:label="@string/title_Ratib"
-        tools:layout="@layout/fragment_ratib" />
+        tools:layout="@layout/fragment_asisten" />
 
 
     <fragment
         android:id="@+id/navigation_notifications"
-        android:name="com.thorin.apps.ratibsholawatmaulidkitabkuning.ui.dashboard.NotificationsFragment"
+        android:name="com.thorin.apps.asmal.ui.dashboard.DashboardFragment"
         android:label="@string/title_dashboard"
         tools:layout="@layout/fragment_dashboard" />
 </navigation>

@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.thorin.apps.ratibsholawatmaulidkitabkuning">
+    package="com.thorin.apps.asmal">
 
     <uses-permission android:name="android.permission.INTERNET" />
     <uses-permission android:name="android.permission.WAKE_LOCK" />
@@ -15,26 +15,29 @@
         android:largeHeap="true"
         android:supportsRtl="true"
         android:theme="@style/Theme.RatibSholawatMaulidKitabKuning">
-        <activity android:name=".ui.menu.KiblatActivity"></activity>
-        <activity android:name=".ui.menu.SholawatActivity" />
+        <activity android:name=".ui.menu.maulid.MaulidActivity"></activity>
+        <activity android:name=".ui.asisten.catatamal.NoteAddUpdateActivity" />
+        <activity android:name=".ui.asisten.catatamal.CatatAmalActivity" />
+        <activity android:name=".ui.menu.tasbih.TasbihActivity" />
+        <activity android:name=".ui.menu.sholawat.isiSholawatList" />
+        <activity android:name=".ui.menu.sholawat.SholawatListActivity" />
+        <activity android:name=".ui.menu.ratib.MenuRatibsActivity" />
         <activity android:name=".ui.dashboard.SettingActivity" />
         <activity android:name=".ui.dashboard.NotifActivity" />
-        <activity android:name=".ui.dashboard.SemangatHijrahActivity" />
         <activity android:name=".ui.dashboard.AboutThorin" />
         <activity android:name=".ui.dashboard.QuranActivityOnline" />
-        <activity android:name=".ui.ratib.RatibAthosHistory" />
-        <activity android:name=".ui.ratib.RatibHadadHistory" />
-        <activity android:name=".ui.ratib.RatibAthosFadhilah" />
-        <activity android:name=".ui.ratib.RatibAlhaddadFadhilah" />
+        <activity android:name=".ui.menu.ratib.RatibAthosHistory" />
+        <activity android:name=".ui.menu.ratib.RatibHadadHistory" />
+        <activity android:name=".ui.menu.ratib.RatibAthosFadhilah" />
+        <activity android:name=".ui.menu.ratib.RatibAlhaddadFadhilah" />
 
         <receiver
             android:name=".BroadcastReceiver.AlarmReceiver"
             android:enabled="true"
             android:exported="false" />
 
-        <activity android:name=".ui.ratib.RatibAlathosActivity" />
-        <activity android:name=".ui.ratib.RatibAlhaddadActivity" />
-        <activity android:name=".ui.menu.BaitSholawat" />
+        <activity android:name=".ui.menu.ratib.RatibAlathosActivity" />
+        <activity android:name=".ui.menu.ratib.RatibAlhaddadActivity" />
         <activity
             android:name=".MainActivity"
             android:label="@string/app_name"
@@ -60,7 +63,10 @@
             <intent-filter>
                 <action android:name="com.google.firebase.MESSAGING_EVENT" />
             </intent-filter>
-        </service>
+        </service> <!-- Sample AdMob app ID: ca-app-pub-3940256099942544~3347511713 -->
+        <meta-data
+            android:name="com.google.android.gms.ads.APPLICATION_ID"
+            android:value="ca-app-pub-1124685100899494~1238374562" />
     </application>
 
 </manifest>

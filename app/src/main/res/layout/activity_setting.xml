@@ -2,11 +2,22 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
+    xmlns:ads="http://schemas.android.com/apk/lib/com.google.ads"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
     android:padding="16dp"
     tools:context=".ui.dashboard.SettingActivity">
+
+    <com.google.android.gms.ads.AdView
+        xmlns:ads="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/adView3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        ads:adSize="BANNER"
+        android:layout_gravity="center"
+        ads:adUnitId="ca-app-pub-1124685100899494/7420639537">
+    </com.google.android.gms.ads.AdView>
 
     <TextView
         android:layout_width="match_parent"
@@ -41,21 +52,6 @@
         android:textAllCaps="false"
         android:textSize="16sp"
         style="@style/TextAppearance.AppCompat"/>
-    <TextView
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="Jika anda merasa terganggu dengan iklan di aplikasi ini, anda bisa mengaturnya dengan klik tombol di bawah."
-        android:textSize="20sp"
-        android:layout_marginTop="20dp"/>
-    <Button
-        android:id="@+id/btn_iklan"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="10dp"
-        android:text="Laporan/Masukan"
-        android:textAlignment="textStart"
-        android:textAllCaps="false"
-        android:textSize="16sp"
-        style="@style/TextAppearance.AppCompat"/>
+
 
 </LinearLayout>
