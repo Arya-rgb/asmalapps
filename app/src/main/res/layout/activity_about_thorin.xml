@@ -1,11 +1,18 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
     tools:context=".ui.dashboard.QuranActivityOnline">
+
+ <LinearLayout
+     android:layout_width="match_parent"
+     android:layout_height="wrap_content"
+     android:orientation="vertical">
+
+
 
    <TextView
        android:layout_width="match_parent"
@@ -27,29 +34,27 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="10dp"
         android:padding="10dp"
-        android:gravity="center"
-        android:text="Created By"/>
-    <TextView
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="10dp"
-        android:padding="10dp"
-        android:gravity="center"
-        android:text="Dicky Arya Pratama 1218009"/>
-    <TextView
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:text="Aplikasi Android Asisten Amal Muslim Adalah aplikasi android pertama yang di luncurkan oleh Thorin Creative, Tentunya ini adalah pencapaian yang membanggakan, Fitur dalam aplikasi ini di antaranya terdapat daftar sholawat (akan terus bertambah), Amalan Ratib Al-Haddad dan Al-Atthos yang mudah di baca dan teks arab nya costumable, terdapat fitur Al-Quran, Pencarian masjid terdekat dan pengingat amal, fitur-fitur mungkin akan bertambah lagi kedepan nya, kami sangat bersyukur jika aplikasi ini dapat berguna bagi umat, semoga aplikasi ini membawa manfaat dan memudahkan amalan anda."/>
 
-        android:padding="10dp"
-        android:gravity="center"
-        android:text="Rayandra Wandi Marselana 1218022"/>
-    <TextView
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="10dp"
-        android:padding="10dp"
-        android:gravity="center"
-        android:text="Akan Segera Tersedia Di Playstore Gratis"/>
+ <TextView
+     android:layout_width="match_parent"
+     android:layout_height="wrap_content"
+     android:layout_marginTop="10dp"
+     android:padding="10dp"
+     android:text="Intagram = @thotin_creative"/>
+ <TextView
+     android:layout_width="match_parent"
+     android:layout_height="wrap_content"
+     android:layout_marginTop="5dp"
+     android:padding="10dp"
+     android:text="Website = thorincreative.blogspot.com"/>
+ <TextView
+     android:layout_width="match_parent"
+     android:layout_height="wrap_content"
+     android:layout_marginTop="5dp"
+     android:padding="10dp"
+     android:text="Email = thorin.contact@gmail.com"/>
 
 
-</LinearLayout>
+ </LinearLayout>
+</ScrollView>

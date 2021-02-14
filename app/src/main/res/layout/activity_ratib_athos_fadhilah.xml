@@ -7,18 +7,31 @@
     android:paddingBottom="10dp"
     android:paddingLeft="10dp"
     android:paddingRight="10dp"
-    tools:context=".ui.ratib.RatibAthosFadhilah">
+    tools:context=".ui.menu.ratib.RatibAthosFadhilah">
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="vertical">
+        <TextView
+            android:layout_marginTop="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/mo_re"
+            android:gravity="center"
+            android:text="Besar Huruf"/>
+        <SeekBar
+            android:layout_marginTop="4dp"
+            android:id="@+id/seekBarfadhilathos"
+            android:paddingBottom="8dp"
+            android:progress="14"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
 
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="20dp"
-
             android:fontFamily="@font/mo_re"
             android:textStyle="bold"
             android:textSize="20sp"
@@ -26,98 +39,12 @@
             android:text="@string/opening_fadilah_athos"/>
 
     <TextView
+        android:id="@+id/text_athos_fadhilah"
         android:layout_marginTop="20dp"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:fontFamily="@font/mo_re"
-        android:text="@string/faedahathos1"/>
-    <TextView
-        android:layout_marginTop="8dp"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:fontFamily="@font/mo_re"
-        android:text="@string/faaedahaathos1"/>
-    <TextView
-        android:layout_marginTop="8dp"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:fontFamily="@font/mo_re"
-        android:text="@string/faedahaathos2"/>
-    <TextView
-        android:layout_marginTop="8dp"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:fontFamily="@font/mo_re"
-        android:text="@string/faaedahathos3"/>
-    <TextView
-        android:layout_marginTop="8dp"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:fontFamily="@font/mo_re"
-        android:text="@string/faedahathos4"/>
-    <TextView
-        android:layout_marginTop="8dp"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:fontFamily="@font/mo_re"
-        android:text="@string/faedahathos5"/>
-    <TextView
-        android:layout_marginTop="8dp"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:fontFamily="@font/mo_re"
-        android:text="@string/faaedaahathos6"/>
-        <TextView
-            android:layout_marginTop="8dp"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:fontFamily="@font/mo_re"
-            android:text="@string/faedahathos7"/>
-        <TextView
-            android:layout_marginTop="8dp"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:fontFamily="@font/mo_re"
-            android:text="@string/faedah8"/>
-        <TextView
-            android:layout_marginTop="8dp"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:fontFamily="@font/mo_re"
-            android:text="@string/faedahathos9"/>
-        <TextView
-            android:layout_marginTop="8dp"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:fontFamily="@font/mo_re"
-            android:text="@string/fadilahathoss10"/>
-        <TextView
-            android:layout_marginTop="8dp"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:fontFamily="@font/mo_re"
-            android:text="@string/fadhilahathos11"/>
-        <TextView
-            android:layout_marginTop="8dp"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:fontFamily="@font/mo_re"
-            android:text="@string/faadhilah12"/>
-        <TextView
-            android:layout_marginTop="8dp"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:fontFamily="@font/mo_re"
-            android:text="@string/fadhilahakhir"/>
-        <TextView
-            android:layout_marginTop="18dp"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:fontFamily="@font/mo_re"
-            android:text="@string/ssumber"/>
-
-
-
+        tools:text="teks"/>
 
     </LinearLayout>
 </ScrollView>

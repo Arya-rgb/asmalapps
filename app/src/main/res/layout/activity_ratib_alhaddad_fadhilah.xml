@@ -7,12 +7,25 @@
     android:paddingRight="10dp"
     android:paddingLeft="10dp"
     android:paddingBottom="10dp"
-    tools:context=".ui.ratib.RatibAlhaddadFadhilah">
+    tools:context=".ui.menu.ratib.RatibAlhaddadFadhilah">
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="vertical">
-
+        <TextView
+            android:layout_marginTop="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/mo_re"
+            android:gravity="center"
+            android:text="Besar Huruf"/>
+        <SeekBar
+            android:layout_marginTop="4dp"
+            android:id="@+id/seekBarfadhilahhadad"
+            android:paddingBottom="8dp"
+            android:progress="14"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -21,57 +34,14 @@
         android:textStyle="bold"
         android:textSize="20sp"
         android:gravity="center"
-        android:text="@string/fadhilah_keutamaan_membaca_ratib_al_haddad"/>
+        android:text="Keutamaan Membaca Ratib Al-Haddad"/>
 
     <TextView
+        android:id="@+id/text_fadhilah_hadad"
         android:layout_marginTop="20dp"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:fontFamily="@font/mo_re"
-        android:text="@string/fadhilah2"/>
-    <TextView
-        android:layout_marginTop="10dp"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:fontFamily="@font/mo_re"
-        android:text="@string/fadhilah3"/>
-    <TextView
-        android:layout_marginTop="10dp"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:fontFamily="@font/mo_re"
-        android:text="@string/fadhilahket"/>
-        <TextView
-            android:layout_marginTop="10dp"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:fontFamily="@font/mo_re"
-            android:text="@string/faedahratib"/>
-        <TextView
-            android:layout_marginTop="10dp"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:fontFamily="@font/mo_re"
-            android:text="@string/faedah2"/>
-        <TextView
-            android:layout_marginTop="10dp"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:fontFamily="@font/mo_re"
-            android:text="@string/faedahindo"/>
-        <TextView
-            android:layout_marginTop="10dp"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:fontFamily="@font/mo_re"
-            android:text="@string/penutup"/>
-        <TextView
-            android:layout_marginTop="18dp"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_gravity="center"
-            android:gravity="center"
-            android:fontFamily="@font/mo_re"
-            android:text="@string/sumberutadz"/>
+        tools:text="text"/>
     </LinearLayout>
 </ScrollView>

@@ -7,17 +7,32 @@
     android:paddingLeft="10dp"
     android:paddingBottom="10dp"
     android:orientation="vertical"
-    tools:context=".ui.ratib.RatibAthosHistory">
+    tools:context=".ui.menu.ratib.RatibAthosHistory">
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="vertical">
 
+        <TextView
+            android:layout_marginTop="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/mo_re"
+            android:gravity="center"
+            android:text="Besar Huruf"/>
+        <SeekBar
+            android:layout_marginTop="4dp"
+            android:id="@+id/seekAthosFadhilah"
+            android:paddingBottom="8dp"
+            android:progress="14"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="28dp"
+
         android:fontFamily="@font/mo_re"
         android:textStyle="bold"
         android:textSize="20sp"
@@ -25,28 +40,12 @@
         android:text="@string/sejarah_ratib_al_athos"/>
 
     <TextView
+        android:id="@+id/text_athos_history"
         android:layout_marginTop="8dp"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:fontFamily="@font/mo_re"
-        android:text="@string/sejarahaathos1"/>
-    <TextView
-        android:layout_marginTop="8dp"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:fontFamily="@font/mo_re"
-        android:text="@string/sejarahathos2"/>
-    <TextView
-        android:layout_marginTop="8dp"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:fontFamily="@font/mo_re"
-        android:text="@string/sejarahathos3"/>
-    <TextView
-        android:layout_marginTop="8dp"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:fontFamily="@font/mo_re"
-        android:text="@string/sejarahathos4"/>
+        tools:text="text"/>
+
     </LinearLayout>
 </ScrollView>

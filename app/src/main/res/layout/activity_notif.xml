@@ -7,7 +7,18 @@
     android:padding="16dp"
     android:orientation="vertical">
 
+    <com.google.android.gms.ads.AdView
+        xmlns:ads="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/adView4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        ads:adSize="BANNER"
+        android:layout_gravity="center"
+        ads:adUnitId="ca-app-pub-1124685100899494/7420639537">
+    </com.google.android.gms.ads.AdView>
+
  <TextView
+     android:layout_marginTop="10dp"
      android:layout_width="match_parent"
      android:layout_height="wrap_content"
      android:textSize="16sp"

@@ -3,13 +3,13 @@
 
     <item
         android:id="@+id/navigation_sholawat"
-        android:icon="@drawable/ic_sholawat_bottom"
-        android:title="@string/sholawat" />
+        android:icon="@drawable/ic_ratib_nav"
+        android:title="@string/menu" />
 
     <item
         android:id="@+id/navigation_ratib"
-        android:icon="@drawable/ic_ratib_nav"
-        android:title="@string/ratib" />
+        android:icon="@drawable/ic_sholawat_bottom"
+        android:title="@string/asisten" />
 
     <item
         android:id="@+id/navigation_notifications"

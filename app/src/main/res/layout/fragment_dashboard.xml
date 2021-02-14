@@ -49,15 +49,13 @@
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Ratib Dan Sholawat"
-                    android:textColor="@color/black"
+                    android:text="Asisten Amal Muslim"
                     android:textSize="20sp"/>
 
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="Aplikasi Untuk Memudahkan Amalan Anda"
-                    android:textColor="@color/black"
                     android:textSize="10sp"/>
 
             </LinearLayout>
@@ -89,7 +87,7 @@
         android:orientation="horizontal">
 
         <androidx.cardview.widget.CardView
-            android:onClick="moveQuran"
+            android:id="@+id/moveQuran"
             android:layout_weight="1"
             android:layout_width="match_parent"
             android:layout_height="120dp"
@@ -125,7 +123,7 @@
         </androidx.cardview.widget.CardView>
 
         <androidx.cardview.widget.CardView
-            android:onClick="masjidTerdekat"
+            android:id="@+id/moveMasjid"
             android:layout_weight="1"
             android:layout_width="match_parent"
             android:layout_height="120dp"
@@ -162,97 +160,6 @@
 
     </LinearLayout>
 
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="10dp"
-        android:layout_marginLeft="16dp"
-        android:layout_marginRight="16dp"
-
-        android:weightSum="2"
-        android:orientation="horizontal">
-
-        <androidx.cardview.widget.CardView
-            android:onClick="moveHijrah"
-            android:layout_weight="1"
-            android:layout_width="match_parent"
-            android:layout_height="120dp"
-            android:layout_margin="5dp"
-            android:clickable="true"
-            android:foreground="?android:attr/selectableItemBackground"
-            app:cardCornerRadius="3dp"
-            app:cardElevation="3dp">
-
-            <RelativeLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:padding="3dp">
-
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="Semangat Hijrah"
-                    android:layout_centerHorizontal="true"
-                    android:textSize="18sp"
-                    android:textStyle="bold"/>
-
-                <ImageView
-                    android:layout_width="match_parent"
-                    android:layout_height="90dp"
-                    android:paddingTop="10dp"
-                    android:paddingBottom="15dp"
-                    android:src="@drawable/ic_semangat_hijrah"
-                    android:layout_alignParentEnd="true"
-                    android:layout_alignParentBottom="true"/>
-
-            </RelativeLayout>
-
-
-        </androidx.cardview.widget.CardView>
-
-        <androidx.cardview.widget.CardView
-            android:onClick="moveAbout"
-            android:layout_weight="1"
-            android:layout_width="match_parent"
-            android:layout_height="120dp"
-            android:layout_margin="5dp"
-            android:clickable="true"
-            android:foreground="?android:attr/selectableItemBackground"
-            app:cardCornerRadius="3dp"
-            app:cardElevation="3dp"
-            android:focusable="true">
-
-            <RelativeLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:padding="3dp">
-
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="Tentang Kami"
-                    android:textSize="18sp"
-                    android:layout_centerHorizontal="true"
-                    android:textStyle="bold"/>
-
-                <ImageView
-                    android:layout_width="match_parent"
-                    android:layout_height="90dp"
-                    android:src="@drawable/ic_logo_perusahaan"
-                    android:layout_alignParentRight="true"
-                    android:layout_alignParentBottom="true"/>
-
-            </RelativeLayout>
-
-
-        </androidx.cardview.widget.CardView>
-
-
-
-
-
-
-    </LinearLayout>
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -264,7 +171,7 @@
                 android:orientation="horizontal">
 
                 <androidx.cardview.widget.CardView
-                    android:onClick="moveNotif"
+                    android:id="@+id/moveNotif"
                     android:layout_weight="1"
                     android:layout_width="match_parent"
                     android:layout_height="120dp"
@@ -302,7 +209,7 @@
                 </androidx.cardview.widget.CardView>
 
                 <androidx.cardview.widget.CardView
-                    android:onClick="moveSetting"
+                    android:id="@+id/moveSetting"
                     android:layout_weight="1"
                     android:layout_width="match_parent"
                     android:layout_height="120dp"
@@ -337,6 +244,60 @@
 
 
                 </androidx.cardview.widget.CardView>
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+
+                android:weightSum="2"
+                android:orientation="horizontal">
+
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/moveAbout"
+                    android:layout_weight="1"
+                    android:layout_width="match_parent"
+                    android:layout_height="120dp"
+                    android:layout_margin="5dp"
+                    android:clickable="true"
+                    android:foreground="?android:attr/selectableItemBackground"
+                    app:cardCornerRadius="3dp"
+                    app:cardElevation="3dp"
+                    android:focusable="true">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="3dp">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Tentang Kami"
+                            android:textSize="18sp"
+                            android:layout_centerHorizontal="true"
+                            android:textStyle="bold"/>
+
+                        <ImageView
+                            android:layout_width="match_parent"
+                            android:layout_height="90dp"
+                            android:src="@drawable/ic_logo_perusahaan"
+                            android:layout_alignParentRight="true"
+                            android:layout_alignParentBottom="true"/>
+
+                    </RelativeLayout>
+
+
+                </androidx.cardview.widget.CardView>
+
+
+
+
+
 
             </LinearLayout>
 

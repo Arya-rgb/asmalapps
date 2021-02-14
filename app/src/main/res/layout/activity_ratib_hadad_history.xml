@@ -8,57 +8,44 @@
     android:paddingLeft="10dp"
     android:paddingBottom="10dp"
     android:orientation="vertical"
-    tools:context=".ui.ratib.RatibHadadHistory">
+    tools:context=".ui.menu.ratib.RatibHadadHistory">
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="vertical">
 
+        <TextView
+            android:layout_marginTop="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/mo_re"
+            android:gravity="center"
+            android:text="Besar Huruf"/>
+        <SeekBar
+            android:layout_marginTop="4dp"
+            android:id="@+id/seekhadadhistory"
+            android:progress="14"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="28dp"
+        android:layout_marginTop="10dp"
         android:fontFamily="@font/mo_re"
         android:textStyle="bold"
         android:textSize="20sp"
         android:gravity="center"
         android:text="@string/Sejarah"/>
+
     <TextView
+        android:id="@+id/text_hadad_history"
         android:layout_marginTop="8dp"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:fontFamily="@font/mo_re"
-        android:text="@string/sejarah1"/>
-    <TextView
-        android:layout_marginTop="8dp"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:fontFamily="@font/mo_re"
-        android:text="@string/sejarah2"/>
-    <TextView
-        android:layout_marginTop="8dp"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:fontFamily="@font/mo_re"
-        android:text="@string/sejarah3"/>
-    <TextView
-        android:layout_marginTop="8dp"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:fontFamily="@font/mo_re"
-        android:text="@string/sejarah4"/>
-    <TextView
-        android:layout_marginTop="8dp"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:fontFamily="@font/mo_re"
-        android:text="@string/sejarah5"/>
-    <TextView
-        android:layout_marginTop="20dp"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:fontFamily="@font/mo_re"
-        android:text="@string/sejarah6"/>
+        tools:text="teks"/>
+
     </LinearLayout>
 </ScrollView>
