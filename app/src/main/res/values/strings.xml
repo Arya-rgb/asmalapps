@@ -26,6 +26,12 @@
     <string name="msg_token_fmt" translatable="false">InstanceID Token: %s</string>
     <string name="menu">Menu</string>
     <string name="asisten">Asisten</string>
+    <string name="image_for_splashscreen">Image For SplashScreen</string>
+    <string name="image_loginpage">Image Loginpage</string>
+    <string name="login_dengan_google">Login Dengan Google</string>
+    <string name="asmal_menjamin_keamanan_data_anda">Asmal Menjamin Keamanan Data Anda</string>
+    <string name="login_hp">Login Dengan Nomer Hp</string>
+    <string name="login_tamu">Masuk Sebagai Tamu</string>
 
 
 </resources>

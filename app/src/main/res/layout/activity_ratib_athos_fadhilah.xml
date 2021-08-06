@@ -7,7 +7,7 @@
     android:paddingBottom="10dp"
     android:paddingLeft="10dp"
     android:paddingRight="10dp"
-    tools:context=".ui.menu.ratib.RatibAthosFadhilah">
+    tools:context=".view.ui.menu.ratib.RatibAthosFadhilah">
 
     <LinearLayout
         android:layout_width="match_parent"

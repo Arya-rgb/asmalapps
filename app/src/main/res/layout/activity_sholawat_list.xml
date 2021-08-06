@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    tools:context=".ui.menu.sholawat.SholawatListActivity">
+    tools:context=".view.ui.menu.sholawat.SholawatListActivity">
     <androidx.appcompat.widget.SearchView
         android:id="@+id/sample_editText"
         android:layout_width="match_parent"

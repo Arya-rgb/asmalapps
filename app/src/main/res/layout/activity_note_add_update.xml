@@ -5,7 +5,7 @@
     android:layout_height="match_parent"
     android:orientation="vertical"
     android:padding="16dp"
-    tools:context=".ui.asisten.catatamal.NoteAddUpdateActivity">
+    tools:context=".view.ui.asisten.catatamal.NoteAddUpdateActivity">
 
     <com.google.android.gms.ads.AdView
         xmlns:ads="http://schemas.android.com/apk/res-auto"

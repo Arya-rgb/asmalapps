@@ -12,7 +12,7 @@ import android.os.Build
 import android.widget.Toast
 import androidx.core.app.NotificationCompat
 import androidx.core.content.ContextCompat
-import com.thorin.apps.asmal.MainActivity
+import com.thorin.apps.asmal.view.MainActivity
 import com.thorin.apps.asmal.R
 import java.util.*
 

@@ -7,7 +7,7 @@
     android:paddingRight="10dp"
     android:paddingBottom="10dp"
     android:orientation="vertical"
-    tools:context=".ui.menu.ratib.RatibAlathosActivity">
+    tools:context=".view.ui.menu.ratib.RatibAlathosActivity">
     <TextView
         android:layout_marginTop="10dp"
         android:layout_width="wrap_content"

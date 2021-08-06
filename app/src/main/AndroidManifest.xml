@@ -15,39 +15,45 @@
         android:largeHeap="true"
         android:supportsRtl="true"
         android:theme="@style/Theme.RatibSholawatMaulidKitabKuning">
-        <activity android:name=".ui.menu.maulid.MaulidActivity"></activity>
-        <activity android:name=".ui.asisten.catatamal.NoteAddUpdateActivity" />
-        <activity android:name=".ui.asisten.catatamal.CatatAmalActivity" />
-        <activity android:name=".ui.menu.tasbih.TasbihActivity" />
-        <activity android:name=".ui.menu.sholawat.isiSholawatList" />
-        <activity android:name=".ui.menu.sholawat.SholawatListActivity" />
-        <activity android:name=".ui.menu.ratib.MenuRatibsActivity" />
-        <activity android:name=".ui.dashboard.SettingActivity" />
-        <activity android:name=".ui.dashboard.NotifActivity" />
-        <activity android:name=".ui.dashboard.AboutThorin" />
-        <activity android:name=".ui.dashboard.QuranActivityOnline" />
-        <activity android:name=".ui.menu.ratib.RatibAthosHistory" />
-        <activity android:name=".ui.menu.ratib.RatibHadadHistory" />
-        <activity android:name=".ui.menu.ratib.RatibAthosFadhilah" />
-        <activity android:name=".ui.menu.ratib.RatibAlhaddadFadhilah" />
-
-        <receiver
-            android:name=".BroadcastReceiver.AlarmReceiver"
-            android:enabled="true"
-            android:exported="false" />
-
-        <activity android:name=".ui.menu.ratib.RatibAlathosActivity" />
-        <activity android:name=".ui.menu.ratib.RatibAlhaddadActivity" />
         <activity
-            android:name=".MainActivity"
-            android:label="@string/app_name"
-            android:screenOrientation="fullSensor">
+            android:name=".view.LoginActivity"
+            android:exported="true" />
+        <activity
+            android:name=".view.SplashScreen"
+            android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity android:name=".view.ui.menu.maulid.MaulidActivity" />
+        <activity android:name=".view.ui.asisten.catatamal.NoteAddUpdateActivity" />
+        <activity android:name=".view.ui.asisten.catatamal.CatatAmalActivity" />
+        <activity android:name=".view.ui.menu.tasbih.TasbihActivity" />
+        <activity android:name=".view.ui.menu.sholawat.isiSholawatList" />
+        <activity android:name=".view.ui.menu.sholawat.SholawatListActivity" />
+        <activity android:name=".view.ui.menu.ratib.MenuRatibsActivity" />
+        <activity android:name=".view.ui.dashboard.SettingActivity" />
+        <activity android:name=".view.ui.dashboard.NotifActivity" />
+        <activity android:name=".view.ui.dashboard.AboutThorin" />
+        <activity android:name=".view.ui.dashboard.QuranActivityOnline" />
+        <activity android:name=".view.ui.menu.ratib.RatibAthosHistory" />
+        <activity android:name=".view.ui.menu.ratib.RatibHadadHistory" />
+        <activity android:name=".view.ui.menu.ratib.RatibAthosFadhilah" />
+        <activity android:name=".view.ui.menu.ratib.RatibAlhaddadFadhilah" />
+
+        <receiver
+            android:name=".BroadcastReceiver.AlarmReceiver"
+            android:enabled="true"
+            android:exported="false" />
+
+        <activity android:name=".view.ui.menu.ratib.RatibAlathosActivity" />
+        <activity android:name=".view.ui.menu.ratib.RatibAlhaddadActivity" />
+        <activity
+            android:name=".view.MainActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="fullSensor"></activity>
 
         <meta-data
             android:name="com.google.firebase.messaging.default_notification_icon"
