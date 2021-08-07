@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<ScrollView
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
@@ -8,306 +7,343 @@
     android:orientation="vertical"
     tools:context=".view.MainActivity">
 
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="vertical"
-            >
-    <View
-        android:layout_width="match_parent"
-        android:layout_height="100dp"
-        android:id="@+id/bg_top_header"
-        android:paddingTop="200dp"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        android:background="@drawable/ic_bg_dash"/>
-
-    <androidx.cardview.widget.CardView
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_margin="16dp"
-        android:clickable="true"
-        app:cardElevation="13dp"
-        app:cardCornerRadius="6dp"
-        android:focusable="true"
-        app:cardBackgroundColor="@color/purple_700">
-
-
-        <LinearLayout
-            android:padding="10dp"
-            android:gravity="center"
-            android:layout_width="match_parent"
-            android:layout_height="100dp"
-            android:orientation="horizontal">
-
-            <LinearLayout
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:orientation="vertical">
-
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="Asisten Amal Muslim"
-                    android:textSize="20sp"/>
-
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="Aplikasi Untuk Memudahkan Amalan Anda"
-                    android:textSize="10sp"/>
-
-            </LinearLayout>
-
-            <RelativeLayout
-                android:layout_width="match_parent"
-                android:layout_height="match_parent">
-
-                <ImageView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:src="@drawable/ic_image_sholawat"
-                    android:layout_centerVertical="true"
-                    android:layout_alignParentRight="true"/>
-
-            </RelativeLayout>
-
-        </LinearLayout>
-
-    </androidx.cardview.widget.CardView>
-
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="16dp"
-        android:layout_marginLeft="16dp"
-        android:layout_marginRight="16dp"
-        android:weightSum="2"
-        android:orientation="horizontal">
+        android:orientation="vertical">
+
 
         <androidx.cardview.widget.CardView
-            android:id="@+id/moveQuran"
-            android:layout_weight="1"
             android:layout_width="match_parent"
-            android:layout_height="120dp"
-            android:layout_margin="5dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="16dp"
             android:clickable="true"
-            android:foreground="?android:attr/selectableItemBackground"
-            app:cardCornerRadius="3dp"
-            app:cardElevation="3dp">
+            android:focusable="true"
+            app:cardBackgroundColor="@color/purple_700"
+            app:cardCornerRadius="6dp"
+            app:cardElevation="13dp">
 
-            <RelativeLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:padding="3dp">
-
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="Al-Quran"
-                    android:textSize="18sp"
-                    android:layout_centerHorizontal="true"
-                    android:textStyle="bold"/>
-
-                <ImageView
-                    android:layout_width="match_parent"
-                    android:layout_height="90dp"
-                    android:src="@drawable/ic_quran"
-                    android:layout_alignParentRight="true"
-                    android:layout_alignParentBottom="true"/>
-
-            </RelativeLayout>
-
-
-        </androidx.cardview.widget.CardView>
-
-        <androidx.cardview.widget.CardView
-            android:id="@+id/moveMasjid"
-            android:layout_weight="1"
-            android:layout_width="match_parent"
-            android:layout_height="120dp"
-            android:layout_margin="5dp"
-            android:clickable="true"
-            android:foreground="?android:attr/selectableItemBackground"
-            app:cardCornerRadius="3dp"
-            app:cardElevation="3dp">
-
-            <RelativeLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:padding="3dp">
-
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="Masjid Terdekat"
-                    android:textSize="18sp"
-                    android:layout_centerHorizontal="true"
-                    android:textStyle="bold"/>
-
-                <ImageView
-                    android:layout_width="match_parent"
-                    android:layout_height="90dp"
-                    android:src="@drawable/ic_mosque"
-                    android:layout_alignParentRight="true"
-                    android:layout_alignParentBottom="true"/>
-
-            </RelativeLayout>
-
-
-        </androidx.cardview.widget.CardView>
-
-    </LinearLayout>
 
             <LinearLayout
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="10dp"
-                android:layout_marginLeft="16dp"
-                android:layout_marginRight="16dp"
+                android:layout_height="100dp"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:padding="10dp">
 
-                android:weightSum="2"
-                android:orientation="horizontal">
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
 
-                <androidx.cardview.widget.CardView
-                    android:id="@+id/moveNotif"
-                    android:layout_weight="1"
-                    android:layout_width="match_parent"
-                    android:layout_height="120dp"
-                    android:layout_margin="5dp"
-                    android:clickable="true"
-                    android:foreground="?android:attr/selectableItemBackground"
-                    app:cardCornerRadius="3dp"
-                    app:cardElevation="3dp">
-
-                    <RelativeLayout
-                        android:layout_width="match_parent"
+                    <TextView
+                        android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:padding="3dp">
+                        android:text="@string/selamat_datang"
+                        android:textSize="20sp" />
 
-                        <TextView
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:text="Notifikasi"
-                            android:layout_centerHorizontal="true"
-                            android:textSize="18sp"
-                            android:textStyle="bold"/>
-
-                        <ImageView
-                            android:layout_width="match_parent"
-                            android:layout_height="90dp"
-                            android:paddingTop="10dp"
-                            android:paddingBottom="15dp"
-                            android:src="@drawable/ic_notification"
-                            android:layout_alignParentEnd="true"
-                            android:layout_alignParentBottom="true"/>
-
-                    </RelativeLayout>
-
-
-                </androidx.cardview.widget.CardView>
-
-                <androidx.cardview.widget.CardView
-                    android:id="@+id/moveSetting"
-                    android:layout_weight="1"
-                    android:layout_width="match_parent"
-                    android:layout_height="120dp"
-                    android:layout_margin="5dp"
-                    android:clickable="true"
-                    android:foreground="?android:attr/selectableItemBackground"
-                    app:cardCornerRadius="3dp"
-                    app:cardElevation="3dp"
-                    android:focusable="true">
-
-                    <RelativeLayout
-                        android:layout_width="match_parent"
+                    <TextView
+                        android:id="@+id/txt_username"
+                        android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:padding="3dp">
+                        tools:text="@string/nama_user"
+                        android:textSize="12sp" />
 
-                        <TextView
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:text="Pengaturan"
-                            android:textSize="18sp"
-                            android:layout_centerHorizontal="true"
-                            android:textStyle="bold"/>
+                </LinearLayout>
 
-                        <ImageView
-                            android:layout_width="match_parent"
-                            android:layout_height="90dp"
-                            android:src="@drawable/ic_set"
-                            android:layout_alignParentRight="true"
-                            android:layout_alignParentBottom="true"/>
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
 
-                    </RelativeLayout>
+                    <de.hdodenhof.circleimageview.CircleImageView
+                        android:id="@+id/profil_photo_user"
+                        android:layout_width="100dp"
+                        android:layout_height="100dp"
+                        android:layout_alignParentEnd="true"
+                        android:layout_centerVertical="true"
+                        tools:src="@tools:sample/avatars" />
 
-
-                </androidx.cardview.widget.CardView>
+                </RelativeLayout>
 
             </LinearLayout>
-            <LinearLayout
+
+        </androidx.cardview.widget.CardView>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="16dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginRight="16dp"
+            android:orientation="horizontal"
+            android:weightSum="2">
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/moveQuran"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="10dp"
-                android:layout_marginLeft="16dp"
-                android:layout_marginRight="16dp"
+                android:layout_height="120dp"
+                android:layout_margin="5dp"
+                android:layout_weight="1"
+                android:clickable="true"
+                android:foreground="?android:attr/selectableItemBackground"
+                app:cardCornerRadius="3dp"
+                app:cardElevation="3dp"
+                android:focusable="true">
 
-                android:weightSum="2"
-                android:orientation="horizontal">
-
-
-                <androidx.cardview.widget.CardView
-                    android:id="@+id/moveAbout"
-                    android:layout_weight="1"
+                <RelativeLayout
                     android:layout_width="match_parent"
-                    android:layout_height="120dp"
-                    android:layout_margin="5dp"
-                    android:clickable="true"
-                    android:foreground="?android:attr/selectableItemBackground"
-                    app:cardCornerRadius="3dp"
-                    app:cardElevation="3dp"
-                    android:focusable="true">
+                    android:layout_height="wrap_content"
+                    android:padding="3dp">
 
-                    <RelativeLayout
-                        android:layout_width="match_parent"
+                    <TextView
+                        android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:padding="3dp">
+                        android:layout_centerHorizontal="true"
+                        android:text="@string/al_quran"
+                        android:textSize="18sp"
+                        android:textStyle="bold" />
 
-                        <TextView
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:text="Tentang Kami"
-                            android:textSize="18sp"
-                            android:layout_centerHorizontal="true"
-                            android:textStyle="bold"/>
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="90dp"
+                        android:layout_alignParentEnd="true"
+                        android:layout_alignParentBottom="true"
+                        android:src="@drawable/ic_quran"
+                        android:contentDescription="@string/al_quran" />
 
-                        <ImageView
-                            android:layout_width="match_parent"
-                            android:layout_height="90dp"
-                            android:src="@drawable/ic_logo_perusahaan"
-                            android:layout_alignParentRight="true"
-                            android:layout_alignParentBottom="true"/>
-
-                    </RelativeLayout>
+                </RelativeLayout>
 
 
-                </androidx.cardview.widget.CardView>
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/moveMasjid"
+                android:layout_width="match_parent"
+                android:layout_height="120dp"
+                android:layout_margin="5dp"
+                android:layout_weight="1"
+                android:clickable="true"
+                android:foreground="?android:attr/selectableItemBackground"
+                app:cardCornerRadius="3dp"
+                app:cardElevation="3dp"
+                android:focusable="true">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="3dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerHorizontal="true"
+                        android:text="@string/masjid_terdekat"
+                        android:textSize="18sp"
+                        android:textStyle="bold" />
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="90dp"
+                        android:layout_alignParentEnd="true"
+                        android:layout_alignParentBottom="true"
+                        android:src="@drawable/ic_mosque"
+                        android:contentDescription="@string/masjid_terdekat" />
+
+                </RelativeLayout>
 
 
+            </androidx.cardview.widget.CardView>
 
-
-
-
-            </LinearLayout>
-
-    <TextView
-        android:layout_width="match_parent"
-        android:textAlignment="center"
-        android:layout_height="wrap_content"
-        android:layout_margin="16dp"
-        android:paddingBottom="68dp"
-        android:text="Aplikasi Versi 1.0.0"/>
         </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="16dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="16dp"
+
+            android:orientation="horizontal"
+            android:weightSum="2">
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/moveNotif"
+                android:layout_width="match_parent"
+                android:layout_height="120dp"
+                android:layout_margin="5dp"
+                android:layout_weight="1"
+                android:clickable="true"
+                android:foreground="?android:attr/selectableItemBackground"
+                app:cardCornerRadius="3dp"
+                app:cardElevation="3dp"
+                android:focusable="true">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="3dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerHorizontal="true"
+                        android:text="@string/notifikasi"
+                        android:textSize="18sp"
+                        android:textStyle="bold" />
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="90dp"
+                        android:layout_alignParentEnd="true"
+                        android:layout_alignParentBottom="true"
+                        android:paddingTop="10dp"
+                        android:paddingBottom="15dp"
+                        android:src="@drawable/ic_notification"
+                        android:contentDescription="@string/notifikasi" />
+
+                </RelativeLayout>
+
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/moveSetting"
+                android:layout_width="match_parent"
+                android:layout_height="120dp"
+                android:layout_margin="5dp"
+                android:layout_weight="1"
+                android:clickable="true"
+                android:focusable="true"
+                android:foreground="?android:attr/selectableItemBackground"
+                app:cardCornerRadius="3dp"
+                app:cardElevation="3dp">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="3dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerHorizontal="true"
+                        android:text="@string/pengaturan"
+                        android:textSize="18sp"
+                        android:textStyle="bold" />
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="90dp"
+                        android:layout_alignParentEnd="true"
+                        android:layout_alignParentBottom="true"
+                        android:src="@drawable/ic_set"
+                        android:contentDescription="@string/pengaturan" />
+
+                </RelativeLayout>
+
+
+            </androidx.cardview.widget.CardView>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="16dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="16dp"
+
+            android:orientation="horizontal"
+            android:weightSum="2">
+
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/moveAbout"
+                android:layout_width="match_parent"
+                android:layout_height="120dp"
+                android:layout_margin="5dp"
+                android:layout_weight="1"
+                android:clickable="true"
+                android:focusable="true"
+                android:foreground="?android:attr/selectableItemBackground"
+                app:cardCornerRadius="3dp"
+                app:cardElevation="3dp">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="3dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerHorizontal="true"
+                        android:text="@string/tentang_kami"
+                        android:textSize="18sp"
+                        android:textStyle="bold" />
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="90dp"
+                        android:layout_alignParentEnd="true"
+                        android:layout_alignParentBottom="true"
+                        android:src="@drawable/ic_logo_perusahaan"
+                        android:contentDescription="@string/tentang_kami" />
+
+                </RelativeLayout>
+
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/nav_profile"
+                android:layout_width="match_parent"
+                android:layout_height="120dp"
+                android:layout_margin="5dp"
+                android:layout_weight="1"
+                android:clickable="true"
+                android:focusable="true"
+                android:foreground="?android:attr/selectableItemBackground"
+                app:cardCornerRadius="3dp"
+                app:cardElevation="3dp">
+
+                <RelativeLayout
+
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="3dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerHorizontal="true"
+                        android:text="@string/profil"
+                        android:textSize="18sp"
+                        android:textStyle="bold" />
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="90dp"
+                        android:layout_alignParentEnd="true"
+                        android:layout_alignParentBottom="true"
+                        android:src="@drawable/ic_profile"
+                        android:contentDescription="@string/profil" />
+
+                </RelativeLayout>
+
+
+            </androidx.cardview.widget.CardView>
+
+
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="16dp"
+            android:paddingBottom="68dp"
+            android:text="@string/aplikasi_versi_1_1_0"
+            android:textAlignment="center" />
+    </LinearLayout>
 
 </ScrollView>

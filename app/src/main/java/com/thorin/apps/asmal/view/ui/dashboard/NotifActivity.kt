@@ -102,6 +102,7 @@ class NotifActivity : AppCompatActivity(), View.OnClickListener {
         mAdView.resume()
     }
 
+
     // Called before the activity is destroyed
     public override fun onDestroy() {
         mAdView.destroy()

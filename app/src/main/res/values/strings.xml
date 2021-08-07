@@ -32,6 +32,20 @@
     <string name="asmal_menjamin_keamanan_data_anda">Asmal Menjamin Keamanan Data Anda</string>
     <string name="login_hp">Login Dengan Nomer Hp</string>
     <string name="login_tamu">Masuk Sebagai Tamu</string>
+    <string name="selamat_datang">Selamat Datang</string>
+    <string name="nama_user">Nama User</string>
+    <string name="aplikasi_versi_1_1_0">Aplikasi Versi 1.1.0</string>
+    <string name="al_quran">Al-Quran</string>
+    <string name="masjid_terdekat">Masjid Terdekat</string>
+    <string name="notifikasi">Notifikasi</string>
+    <string name="pengaturan">Pengaturan</string>
+    <string name="tentang_kami">Tentang Kami</string>
+    <string name="profil">Profil</string>
+    <string name="profile_saya">Profile Saya</string>
+    <string name="email">Email</string>
+    <string name="nomer">Nomer</string>
+    <string name="bio">Bio</string>
+    <string name="tentang">Tentang</string>
 
 
 </resources>

@@ -93,9 +93,11 @@ class LoginActivity : AppCompatActivity() {
                     userHashMap["profile_photo"] = mAuth.currentUser?.photoUrl.toString()
                     userHashMap["username"] = mAuth.currentUser?.displayName.toString()
                     userHashMap["email"] = mAuth.currentUser?.email.toString()
+                    userHashMap["number"] = "Kosong"
+                    userHashMap["tentang"] = "Kosong"
                     userHashMap["search"] = mAuth.currentUser?.displayName.toString().lowercase(
                         Locale.ROOT)
-                    userHashMap["bio"] = "Empty"
+                    userHashMap["bio"] = "Kosong"
                     refUser.updateChildren(userHashMap)
                         .addOnCompleteListener { tasks ->
                             if (tasks.isSuccessful) {

@@ -1,23 +1,35 @@
-package com.thorin.apps.asmal.view.ui.menu.sholawat
+package com.thorin.apps.asmal.view.ui.menu
 
 import android.content.Intent
 import android.os.Bundle
+import android.view.LayoutInflater
 import android.view.View
+import android.view.ViewGroup
 import androidx.fragment.app.Fragment
 import com.thorin.apps.asmal.R
+import com.thorin.apps.asmal.databinding.FragmentAsistenBinding
 import com.thorin.apps.asmal.databinding.FragmentMenuBinding
 import com.thorin.apps.asmal.view.ui.menu.ratib.MenuRatibsActivity
+import com.thorin.apps.asmal.view.ui.menu.sholawat.SholawatListActivity
 import com.thorin.apps.asmal.view.ui.menu.tasbih.TasbihActivity
 
 
 class MenuFragment : Fragment(R.layout.fragment_menu) {
 
-    private var fragmentMenuBinding: FragmentMenuBinding? = null
+    private var _binding: FragmentMenuBinding? = null
+    private val binding get() = _binding!!
+
+    override fun onCreateView(
+        inflater: LayoutInflater,
+        container: ViewGroup?,
+        savedInstanceState: Bundle?
+    ): View {
+        _binding = FragmentMenuBinding.inflate(layoutInflater, container, false)
+        return binding.root
+    }
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
-        val binding = FragmentMenuBinding.bind(view)
-        fragmentMenuBinding = binding
 
         binding.moveSholawat.setOnClickListener {
             val moveIntent = Intent(activity, SholawatListActivity::class.java)
@@ -35,8 +47,10 @@ class MenuFragment : Fragment(R.layout.fragment_menu) {
         }
 
     }
+
     override fun onDestroyView() {
-        fragmentMenuBinding = null
         super.onDestroyView()
+        _binding = null
     }
+
 }

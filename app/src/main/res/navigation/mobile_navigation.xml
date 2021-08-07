@@ -6,7 +6,7 @@
 
     <fragment
         android:id="@+id/navigation_sholawat"
-        android:name="com.thorin.apps.asmal.view.ui.menu.sholawat.MenuFragment"
+        android:name="com.thorin.apps.asmal.view.ui.menu.MenuFragment"
         android:label="@string/menu"
         tools:layout="@layout/fragment_menu" />
 

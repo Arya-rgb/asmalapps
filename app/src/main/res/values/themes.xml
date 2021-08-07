@@ -14,4 +14,9 @@
         <!-- Customize your theme here. -->
         <item name="android:textColor">@color/black</item>
     </style>
+
+    <style name="backgroundTheme">
+        <item name="android:background">@drawable/grad</item>
+    </style>
+
 </resources>
