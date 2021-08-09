@@ -21,4 +21,9 @@
         <item name="android:background">@drawable/grad_night</item>
     </style>
 
+    <style name="backgroundBottom">
+        <item name="android:background">@drawable/bg_bottomnav_night</item>
+    </style>
+
+
 </resources>

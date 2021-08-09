@@ -19,4 +19,9 @@
         <item name="android:background">@drawable/grad</item>
     </style>
 
+    <style name="backgroundBottom">
+        <item name="android:background">@drawable/bg_bottombnav</item>
+    </style>
+
+
 </resources>
