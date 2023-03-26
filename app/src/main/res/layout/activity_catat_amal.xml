@@ -31,6 +31,7 @@
         app:fabSize="normal"
         app:layout_anchor="@id/rv_notes"
         app:layout_anchorGravity="bottom|end"
-        app:srcCompat="@drawable/ic_add" />
+        app:srcCompat="@drawable/ic_add"
+        android:contentDescription="Add New Item" />
 
 </androidx.coordinatorlayout.widget.CoordinatorLayout>

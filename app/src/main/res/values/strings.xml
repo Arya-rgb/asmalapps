@@ -46,6 +46,7 @@
     <string name="nomer">Nomer</string>
     <string name="bio">Bio</string>
     <string name="tentang">Tentang</string>
+    <string name="text_catatan_amal">Catatan Amal</string>
 
 
 </resources>
