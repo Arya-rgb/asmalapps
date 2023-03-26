@@ -1,4 +1,4 @@
-package com.thorin.apps.asmal.firebase
+package com.thorin.apps.asmal.data.remote.firebase
 
 import android.app.NotificationChannel
 import android.app.NotificationManager

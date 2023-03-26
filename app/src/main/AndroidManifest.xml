@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.thorin.apps.asmal">
+<manifest xmlns:android="http://schemas.android.com/apk/res/android">
 
     <uses-permission android:name="android.permission.INTERNET" />
     <uses-permission android:name="android.permission.WAKE_LOCK" />
@@ -15,6 +14,12 @@
         android:largeHeap="true"
         android:supportsRtl="true"
         android:theme="@style/Theme.RatibSholawatMaulidKitabKuning">
+        <activity
+            android:name=".AddNotesActivity"
+            android:exported="false" />
+        <activity
+            android:name=".view.ui.amalnotes.NotesAmalActivity"
+            android:exported="false" />
         <activity
             android:name=".view.ui.dashboard.SettingProfileActivity"
             android:exported="true" />
@@ -71,7 +76,8 @@
             android:name="com.google.firebase.messaging.default_notification_channel_id"
             android:value="@string/default_notification_channel_id" />
 
-        <service android:name=".firebase.MyFirebaseMessagingService"
+        <service
+            android:name=".data.remote.firebase.MyFirebaseMessagingService"
             android:exported="true">
             <intent-filter>
                 <action android:name="com.google.firebase.MESSAGING_EVENT" />
